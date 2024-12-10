@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Contact Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+    }
+
+    .contact-list {
+      padding: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .contact-list h2 {
+      margin-bottom: 30px;
+      color: #4e54c8;
+    }
+
+    .contact-card {
+      display: inline-block;
+      background: white;
+      color: #333;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 250px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      color: #4e54c8;
+    }
+
+    .contact-card p {
+      margin: 5px 0;
+    }
+
+    .contact-card a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      background-color: #4e54c8;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #8f94fb;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer-links, .social-media {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a, .social-media a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover, .social-media a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MRS</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <h1>Welcome to Medication Recommendation System</h1>
+    <p>Your trusted platform for connecting with the Team.</p>
+  </section>
+
+  <!-- Contact List Section -->
+  <main>
+    <section class="contact-list">
+      <h2>Our Team</h2>
+      <div class="contact-card">
+        <h3>P Dilip Reddy</h3>
+        <p>Email: <a href="mailto:dilipreddy075@gmail.com">dilipreddy075@gmail.com</a></p>
+        <p>Phone: <a href="tel:03477155035">8121501568</a></p>
+        <button>Contact</button>
+      </div>
+      <div class="contact-card">
+        <h3>M V Harshith</h3>
+        <p>Email: <a href="mailto:harshithharshith41@gmail.com">harshithharshith41@gmail.com</a></p>
+        <p>Phone: <a href="tel:8555997866">8555997866</a></p>
+        <button>Contact</button>
+      </div>
+      <div class="contact-card">
+        <h3>S Mohan Reddy</h3>
+        <p>Email: <a href="mailto:singammohan@gmail.com">singammohan@gmail.com</a></p>
+        <p>Phone: <a href="tel:976332557">976332557</a></p>
+        <button>Contact</button>
+      </div>
+      <div class="contact-card">
+        <h3>Uday Patel</h3>
+        <p>Email: <a href="mailto:udaypatel@gmail.com">udaypatel@gmail.com</a></p>
+        <p>Phone: <a href="tel:8422399786">8422399786</a></p>
+        <button>Contact</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="#privacy-policy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="#support">Support</a>
+    </div>
+    <div class="social-media">
+      <p>Follow us:</p>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>&copy; 2024 Hea. All rights reserved.</p>
+  </footer>
+</body>
+</html>

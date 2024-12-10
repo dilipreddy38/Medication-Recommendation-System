@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      :root {
+          --primary-color: #3498db;
+          --secondary-color: #2ecc71;
+          --bg-gradient: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+      }
+
+      body {
+          background: var(--bg-gradient);
+          font-family: 'Arial', sans-serif;
+      }
+
+      .hero-section {
+          background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+          color: white;
+          padding: 80px 0;
+          text-align: center;
+      }
+
+      .symptom-form {
+          background: white;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          padding: 40px;
+          margin-top: -50px;
+          position: relative;
+          z-index: 10;
+      }
+
+      .result-card {
+          background: white;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          padding: 30px;
+          margin-top: 30px;
+      }
+
+      .modal-header {
+          background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+          color: white;
+      }
+
+      .btn-predict {
+          background: var(--secondary-color);
+          border: none;
+          transition: transform 0.3s ease;
+      }
+
+      .btn-predict:hover {
+          background: var(--primary-color);
+          transform: scale(1.05);
+      }
+
+      .result-button {
+          margin: 10px;
+          border-radius: 25px;
+          padding: 10px 20px;
+          font-weight: bold;
+          transition: all 0.3s ease;
+          color: white;
+      }
+  </style>
+  </head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="{{ url_for('static', filename='consultation.png') }}" alt="HealthAI Logo" width="50" height="50" class="d-inline-block align-text-top">
+    
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+    <div class="container my-4 mt-4 hero-section">
+
+
+        <section class="about-us">
+            <div class="container">
+                <p>We are a team of dedicated developers working on the MedRec system, an AI-powered medication recommendation platform. Our goal is to simplify the process of finding the right medication by using AI technologies to assist healthcare professionals.</p>
+    
+                <div class="team">
+                    <h2>Meet the Team</h2>
+                    
+                    <div class="team-member">
+                        <h3>P Pedda Dilip Reddy - Backend Developer</h3>
+                        <p>Dilip is responsible for building and maintaining the backend infrastructure of the MedRec system. He worked extensively on the server-side logic, ensuring smooth data processing and database management to support accurate medication recommendations.</p>
+                    </div>
+    
+                    <div class="team-member">
+                        <h3>Mantada Venkata Harshith - Frontend Developer</h3>
+                        <p>Harshith played a vital role in designing the user interface of the MedRec platform. He worked on making the system intuitive and user-friendly, focusing on responsive design and seamless navigation to enhance user experience.</p>
+                    </div>
+    
+                    <div class="team-member">
+                        <h3>Singam Mohan Reddy - report and presentation</h3>
+                        <p>Mohan collaborated on the frontend development, implementing various interactive elements and ensuring the UI aligns with the latest web standards. He worked closely with Harshith to build a polished and functional interface.</p>
+                    </div>
+    
+                    <div class="team-member">
+                        <h3>Patel Uday Hareshbhai- Frontend Developer</h3>
+                        <p>Uday developed the chatbot for the MedRec system, integrating AI-based features to assist users in interacting with the platform efficiently. The chatbot provides quick answers to users' queries, improving the overall user engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
